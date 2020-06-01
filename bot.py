@@ -1,7 +1,7 @@
 import praw
 import time
 import pickle
-reddit = praw.Reddit(client_id='yJc2hWBXQOW79A', client_secret='vkecgG0ijXZNhOasnTqfsxyfLcM' , username='mult_bot' , password='iamabot', user_agent='pleasedont')
+reddit = praw.Reddit(client_id='6kT_gyVrnaVw1w', client_secret='zr97OD57mCrQnoxQ_v2lHe8hYc0' , username='megadeth_bot' , password='iamabot', user_agent='itwillworkv1')
 
 try:
   with open('filename.pickle', 'rb') as handle:
@@ -35,7 +35,7 @@ def create_reply(redditor):
 try:
    for comment in reddit.subreddit('bottest').stream.comments(skip_existing=True):
       if 'megadeath' in str(comment.body).lower():
-          if str(comment.author.name) != "mult_bot":
+          if str(comment.author.name) != "megadeth_bot":
             print("HI reply_1")
 
             comment.reply(create_reply(comment.author))
@@ -47,6 +47,7 @@ except :
         pickle.dump(bad_users_hash, handle, protocol=pickle.HIGHEST_PROTOCOL)
     print("ERROR")
     print(bad_users_hash)
+
 
 
 
