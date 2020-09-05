@@ -33,7 +33,7 @@ def create_reply(redditor):
 
 
 try:
-   for comment in reddit.subreddit('bottest').stream.comments(skip_existing=True):
+   for comment in reddit.subreddit('megadeth').stream.comments(skip_existing=True):
       if 'megadeath' in str(comment.body).lower():
           if str(comment.author.name) != "megadeth_bot":
             print("HI reply_1")
@@ -47,14 +47,3 @@ except :
         pickle.dump(bad_users_hash, handle, protocol=pickle.HIGHEST_PROTOCOL)
     print("ERROR")
     print(bad_users_hash)
-
-
-
-
-
-
-
-               
-
-
-
