@@ -2,5 +2,10 @@
 This repository contains the code for the making of a bot for the megadeth subreddit using the Python Reddit API Wrapper.
 Records each users wrong spelling of 'megadeth' in a hashmap and replies according to the number of mistakes committed by user.
 
-# Picture-Organizer
-Downloads pictures using Python Reddit API Wrapper and categorizes them by similarity of objects in the pictures in user's computer
+# Meme-Organizer
+Downloads memes (or other pictures) from Reddit submission to users laptop using Python Reddit API Wrapper and categorizes them by similarity of faces in the memes. 
+
+- --asset flag inserts a picture into the asset. All memes inserted into its corresponding folder will be compared with the assets to determine it's destination. eg: !memeorganizer --assert
+
+- --insert flag inserts a picture into its corresponding folder by comparing with the assets. eg: !memeorganizer --insert
+
