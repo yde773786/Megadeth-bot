@@ -21,15 +21,13 @@ def create_reply(redditor):
     temp = bad_users_hash[str(redditor.name)]
     if temp == 0:
         return "Hi u/" + str(
-            redditor.name) + "! Since this is your first time, I shall kindly tell you that it's spelt 'Megadeth' and " \
-                             "not 'Megadeath' "
+            redditor.name) + "Please note that it is spelt \"Megadeth\" and not \"Megadeath\" "
     elif temp == 1:
-        return "Hi u/" + str(redditor.name) + "! I will get angry if you do this again.... it's Megadeth not Megadeath!"
+        return "Hi u/" + str(redditor.name) + "This is your second violation. it is \"Megadeth\" and not \"Megadeath\""
     else:
         time.sleep(60)
-        return "Listen here u/" + str(redditor.name) + ",you degenerate life form, YOU HAVE MADE THIS MISTAKE MANY " \
-                                                       "TIMES. I CURSE YOU TO NOW FACE YOUR DARKEST HOUR."
-
+        redditor.block()
+        return "u/" + str(redditor.name) + " has been blocked on grounds of deliberate incorrect spelling."
 
 
 try:
