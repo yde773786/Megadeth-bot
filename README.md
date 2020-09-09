@@ -1,6 +1,6 @@
 # Megadeth-Bot
-This repository contains the code for the making of a bot for the megadeth subreddit using the Python Reddit API Wrapper.
-Records each users wrong spelling of 'megadeth' in a hashmap and replies according to the number of mistakes committed by user.
+Proposed mod-bot for r/Megadeth subreddit using the Python Reddit API Wrapper.
+Records each users wrong spelling of 'megadeth' in a hashmap and replies(or blocks) user according to the number of mistakes committed by user.
 
 # Picture-Organizer
 Downloads pictures from Reddit submission to users laptop using Python Reddit API Wrapper and categorizes them by similarity of faces in the pictures. 
